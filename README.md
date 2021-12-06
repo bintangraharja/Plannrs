@@ -1,7 +1,13 @@
 # Plannrs
 Projek Tugas Akhir Mata Kuliah Mobile Application Programming.
 
-IF570L-C
+Aplikasi Planner dan Note yang memiliki fitur:<br>
+1. Fast Action<br>
+2. Notes <br>
+3. Planner<br>
+4. Reminder<br>
+
+IF570L-C<br>
 
 Anggota Kelompok JWT:<br>
 Ananda Setiyani:    00000037692<br>
