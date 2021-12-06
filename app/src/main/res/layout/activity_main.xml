@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bar"
+        android:theme="@style/ThemeOverlay.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|left|top"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="25dp"
+            android:scaleX="1.5"
+            android:scaleY="1.75"
+            android:src="@drawable/logo_word"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btnPlanner"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:background="@drawable/rounded_btn_home"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:srcCompat="@drawable/planner_128px" />
+
+            <ImageButton
+                android:id="@+id/btnNotes"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:background="@drawable/rounded_btn_home"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:srcCompat="@drawable/notes_128px"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btnFastAction"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:background="@drawable/rounded_btn_home"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:srcCompat="@drawable/fast_action_128px" />
+
+            <ImageButton
+                android:id="@+id/btnReminder"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:background="@drawable/rounded_btn_home"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:srcCompat="@drawable/reminder_128px" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/backup"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/icon_color"
+                android:text="Backup"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/restore"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/icon_color"
+                android:text="Restore"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

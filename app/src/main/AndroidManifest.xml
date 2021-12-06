@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.umn.plannrs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:backupInForeground="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Plnnrs">
+        <meta-data
+            android:name="com.google.android.apps.drive.APP_ID"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".fastaction.DetilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FastActionMain"
+            android:exported="true"
+            android:label="FastAction"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.ac.umn.plannrs.MainActivity" />
+        </activity>
+        <activity
+            android:name=".notes.NotesEdit"
+            android:exported="true" />
+        <activity
+            android:name=".Noter"
+            android:exported="true"
+            android:label="Noter"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.ac.umn.plannrs.MainActivity" />
+        </activity>
+
+        <receiver android:name=".reminder.AlarmBroadcast" />
+
+        <activity
+            android:name=".reminder.AddReminder"
+            android:exported="true" />
+        <activity
+            android:name=".Reminder"
+            android:exported="true"
+            android:label="Reminder"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.ac.umn.plannrs.MainActivity" />
+        </activity>
+        <activity
+            android:name=".planner.popup_addplan"
+            android:exported="true" />
+        <activity
+            android:name=".Planner"
+            android:exported="true"
+            android:label="Planner"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.ac.umn.plannrs.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
